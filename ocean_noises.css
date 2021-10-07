@@ -1,0 +1,111 @@
+body{
+	margin:0px;
+	background-color: #102B35;
+}
+
+p{
+	font-size: 1em;
+}
+h1 {
+	font-size: 2em;
+	font: serif;
+}
+
+section{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 25vh;
+}
+section.start {
+	height: 100vh;
+	overflow: hidden;
+	margin-bottom: 5vh;
+	background-image: url('wave.jpg'); 
+	background-repeat: no-repeat; 
+	background-size:cover; 
+	background-attachment: fixed;"
+}
+
+section.start h1{
+	width: auto;
+	text-align: center;
+	color: #def3f6;
+}
+
+section.text{
+	background-color: #fff;
+	padding-top: 10vh;
+	height: 40vh;
+}
+section.text h1{
+	color: #064273;
+	font-size: 3vw;
+}
+
+
+div.header h1{
+	width: auto;
+	text-align: center;
+	color:  #def3f6;
+}
+div.image, div.text {
+	width: 40%;
+	overflow: hidden;
+}
+div.image img{
+	max-width: 100%;
+	border-radius:100%;
+}
+
+/*blockquote css*/
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+    box-sizing: border-box;
+}
+.ArticleCopy{
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  width: 80%;
+  margin:0 auto;
+  border: 1px solid #ddd;
+  padding: 3rem;
+}
+.ArticleCopy p {
+    text-rendering: optimizeLegibility;
+}
+.ArticleCopy blockquote {
+    border-radius: 3px;
+    position: relative;  /*  <--- */
+    font-style: italic;
+    text-align: center;
+    padding: 1rem 1.2rem;
+    width: 80%;  /* create space for the quotes */
+    color: #4a4a4a;
+    margin: 1rem auto 2rem;
+    color: #4a4a4a;
+    background: #E8E8E8;
+}
+/* -- create the quotation marks -- */
+.ArticleCopy blockquote:before,
+.ArticleCopy blockquote:after{
+    font-family: FontAwesome;
+    position: absolute;
+    /* -- inside the relative position of blockquote -- */
+    top: 0px;
+    color: #E8E8E8;
+    font-size: 40px;
+}
+.ArticleCopy blockquote:before{
+    content: "\f10d";
+    margin-right: 13px;
+    right: 100%;
+}
+.ArticleCopy blockquote:after{
+    content: "\f10e";
+    margin-left: 13px;
+    left: 100%;  
+    top: auto;
+    bottom: 13px;
+}
